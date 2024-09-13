@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kétoszlopos Önéletrajz - Backend Fejlesztő</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .left-column {
+            width: 35%;
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px;
+        }
+        .right-column {
+            width: 65%;
+            padding: 40px;
+        }
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #34495e;
+            margin: 0 auto 20px;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .left-column h2 {
+            color: #ecf0f1;
+            border-bottom-color: #ecf0f1;
+        }
+        .contact-info, .skills {
+            margin-bottom: 30px;
+        }
+        .skill {
+            background-color: #34495e;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px 0;
+            display: inline-block;
+            border-radius: 3px;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+        .date {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="photo"></div>
+            <h1>Az Ön Neve</h1>
+            <p>Senior Backend Fejlesztő</p>
+            
+            <div class="contact-info">
+                <h2>Kapcsolat</h2>
+                <p>Email: az.on@email.com</p>
+                <p>Telefon: +36 30 123 4567</p>
+                <p>LinkedIn: linkedin.com/in/azonneve</p>
+            </div>
+            
+            <div class="skills">
+                <h2>Készségek</h2>
+                <span class="skill">Python</span>
+                <span class="skill">NodeJS</span>
+                <span class="skill">SQL</span>
+                <span class="skill">RESTful API</span>
+                <span class="skill">Git</span>
+                <span class="skill">Data Engineering</span>
+                <span class="skill">Docker</span>
+                <span class="skill">Microservices</span>
+            </div>
+        </div>
+        
+        <div class="right-column">
+            <div class="section">
+                <h2>Szakmai Profil</h2>
+                <p>Tapasztalt backend fejlesztő vagyok, specializálódva Python és NodeJS technológiákra. Nemrég szereztem Data Engineer képesítést, ami kiegészíti meglévő backend fejlesztői készségeimet. Széleskörű tapasztalattal rendelkezem fullstack projektekben is, de fő szakterületem a robusztus és skálázható backend rendszerek tervezése és implementálása.</p>
+            </div>
+
+            <div class="section">
+                <h2>Szakmai Tapasztalat</h2>
+                <div class="experience-item">
+                    <h3>Senior Backend Fejlesztő - TechCo Kft.</h3>
+                    <p class="date">2020 - Jelenlegi</p>
+                    <ul>
+                        <li>Nagymértékben skálázható mikroszolgáltatások fejlesztése Python és NodeJS használatával</li>
+                        <li>Adatbázis optimalizálás és teljesítmény hangolás</li>
+                        <li>CI/CD folyamatok kialakítása és karbantartása</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Fullstack Fejlesztő - InnoSoft Zrt.</h3>
+                    <p class="date">2018 - 2020</p>
+                    <ul>
+                        <li>Webalkalmazások fejlesztése MERN stack használatával</li>
+                        <li>RESTful API-k tervezése és implementálása</li>
+                        <li>Agilis fejlesztési módszertanok alkalmazása</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Oktatás és Képesítések</h2>
+                <div class="education-item">
+                    <h3>Data Engineer Képesítés - DataCamp</h3>
+                    <p class="date">2023</p>
+                </div>
+                <div class="education-item">
+                    <h3>BSc Számítástechnika - Példa Egyetem</h3>
+                    <p class="date">2014 - 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
