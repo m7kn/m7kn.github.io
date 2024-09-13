@@ -9,7 +9,6 @@ body {
 
 .container {
     display: flex;
-    position: relative;
     max-width: 1000px;
     margin: 20px auto;
     background-color: white;
@@ -24,7 +23,6 @@ body {
 }
 
 .right-column {
-    position: relative;
     width: 65%;
     padding: 40px;
 }
@@ -82,7 +80,7 @@ h2 {
 
 a {
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
@@ -98,7 +96,6 @@ a {
     position: absolute;
     top: 10px;
     right: 10px;
-    z-index: 1000;
 }
 
 .language-selector button {
