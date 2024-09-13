@@ -60,6 +60,10 @@ h2 {
     margin-bottom: 30px;
 }
 
+.profile {
+    text-align: justify;
+}
+
 .skill {
     background-color: #34495e;
     color: white;
