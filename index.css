@@ -185,3 +185,10 @@ li .fas {
         font-size: 0.9em;
     }
 }
+
+@media print {
+    .container {
+        column-count: 2;
+        column-gap: 20px;
+      }    
+}
