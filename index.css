@@ -21,15 +21,30 @@ body {
 }
 
 .right-column {
-    padding: 40px;
+    padding: 0 40px 40px 40px;
 }
 
 .photo {
     width: 150px;
     height: 150px;
+    margin: 0 auto 20px;
+    position: relative;
+    overflow: hidden;
     border-radius: 50%;
     background-color: #34495e;
-    margin: 0 auto 20px;
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.photo:hover img {
+    opacity: 1;
 }
 
 h1, h2 {
@@ -65,7 +80,7 @@ h2 {
     background-color: #34495e;
     color: white;
     padding: 5px 10px;
-    margin: 5px 0;
+    margin: 5px 5px 5px 0;
     display: inline-block;
     border-radius: 3px;
 }
@@ -93,24 +108,43 @@ a {
     color: #2c3e50;
 }
 
-.language-selector {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.fas, .fab, .fa-brands {
+    margin-right: 8px;
+    width: 16px;
+    text-align: center;
+    font-size: 0.9em;
+    opacity: 0.5;
 }
 
-.language-selector button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    margin-left: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.left-column .fas, .left-column .fab, .left-column .fa-brands {
+    opacity: 0.5;
 }
 
-.language-selector button:hover {
-    background-color: #2980b9;
+h2 .fas, h2 .fab, h2 .fa-brands {
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+.skill .fas, .skill .fab, .skill .fa-brands {
+    margin-right: 4px;
+    width: auto;
+    font-size: 0.8em;
+    opacity: 0.5;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+li .fas {
+    margin-top: 4px;
 }
 
 /* Reszponzív design */
@@ -149,11 +183,5 @@ a {
 
     .skill {
         font-size: 0.9em;
-    }
-
-    .language-selector {
-        position: static;
-        text-align: center;
-        margin-bottom: 20px;
     }
 }
